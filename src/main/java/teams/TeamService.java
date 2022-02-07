@@ -24,7 +24,7 @@ public class TeamService {
     }
 
 
-    public void addPlayerToTeam(Team team, Player player) {
+    public void addPlayerToTeam(Team team, Player player) throws Exception {
         // Check if there is space on the team
         int spaces = countEmptySpacesOnTeam(team);
         // if there is, add the player
@@ -41,6 +41,9 @@ public class TeamService {
                     break;
                 }
             }
+        }
+        else {
+            throw new IllegalStateException("team is full");
         }
     }
 }
