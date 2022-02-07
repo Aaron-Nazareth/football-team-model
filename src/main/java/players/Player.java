@@ -1,3 +1,5 @@
+package players;
+
 import java.util.Objects;
 
 public class Player {
@@ -54,7 +56,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
+        return "players.Player{" +
                 "name='" + name + '\'' +
                 ", position='" + position + '\'' +
                 ", number=" + number +

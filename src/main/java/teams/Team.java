@@ -1,3 +1,8 @@
+package teams;
+
+import managers.Manager;
+import players.Player;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -41,7 +46,7 @@ public class Team {
 
     @Override
     public String toString() {
-        return "Team{" +
+        return "teams.Team{" +
                 "players=" + Arrays.toString(players) +
                 ", name='" + name + '\'' +
                 ", manager=" + manager +
