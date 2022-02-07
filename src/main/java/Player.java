@@ -16,9 +16,7 @@ public class Player {
         this.contractLength = contractLength;
     }
 
-    public Player() {
-
-    }
+    public Player() {}
 
     // Getters & setters
 
